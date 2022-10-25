@@ -10,6 +10,14 @@ import Products from "./pages/Products";
 
 
 import ProductUpdateForm from "./components/productComponents/ProductUpdateForm";
+import Customers from "./pages/Customers";
+import CustomerUpdateForm from "./components/customerComponents/CustomerUpdateForm";
+import Incomes from "./pages/Incomes";
+import IncomeUpdateForm from "./components/incomeComponents/IncomeUpdateForm";
+import Expenditures from "./pages/Expenditures";
+import ExpenditureUpdateForm from "./components/expenditureComponent/ExpenditureUpdateForm";
+import Distributors from "./pages/Distributors";
+import DistributorUpdateForm from "./components/distributorComponent/DistributorUpdateForm";
 
 function App() {
   return (
@@ -24,6 +32,18 @@ function App() {
 
                       <Route path='/products' element={<Products />} />
                       <Route path='/update-product/:id' element={<ProductUpdateForm />} />
+
+                      <Route path='/customers' element={<Customers />} />
+                      <Route path='/update-customer/:id' element={<CustomerUpdateForm />} />
+
+                      <Route path='/incomes' element={<Incomes />} />
+                      <Route path='/update-income/:id' element={<IncomeUpdateForm />} />
+
+                      <Route path='/expenditures' element={<Expenditures />} />
+                      <Route path='/update-expenditure/:id' element={<ExpenditureUpdateForm />} />
+
+                      <Route path='/distributors' element={<Distributors />} />
+                      <Route path='/update-distributor/:id' element={<DistributorUpdateForm />} />
 
                   </Routes>
               </div>
