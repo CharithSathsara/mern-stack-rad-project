@@ -94,6 +94,8 @@ const deleteProduct = asyncHandler( async (req, res) => {
         throw new Error('Goal not found');
     }
 
+
+
     //check for user
     if(!req.user){
         res.status(401)
