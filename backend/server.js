@@ -22,6 +22,9 @@ app.use('/api/users',require('./routes/userRoutes'));
 // Products
 app.use('/api/products',require('./routes/productRoutes'));
 
+// Expenditures
+app.use("/api/expenditures", require("./routes/expenditureRoutes"));
+
 //override the default error handler
 app.use(errorHandler);
 
