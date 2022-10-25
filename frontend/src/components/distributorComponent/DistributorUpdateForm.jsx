@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 //we have to create a thunk function for creating a goal
-import { getDistributors, reset, updateDistributor } from '../../features/distributors/distributorSlice'
+import { getDistributors, reset, updateDistributor } from '../../features/distributers/distributerSlice'
 import { Link, useNavigate } from "react-router-dom";
 
 
@@ -20,8 +20,8 @@ function DistributorUpdateForm() {
     useEffect(() => {
 
         setName(localStorage.getItem('NAME'));
-        setPrice(localStorage.getItem('PRODUCT'));
-        setQuantity(localStorage.getItem('ADDRESS'));
+        setProduct(localStorage.getItem('PRODUCT'));
+        setAddress(localStorage.getItem('ADDRESS'));
 
         if (!user) {
             navigate('/login')
@@ -75,7 +75,7 @@ function DistributorUpdateForm() {
                         name='product'
                         id='product'
                         value={product}
-                        onChange={(e) => setPrice(e.target.value)} />
+                        onChange={(e) => setProduct(e.target.value)} />
                 </div>
                 <div className='form-group'>
                     <label htmlFor="address">Distributor Address</label>
@@ -84,7 +84,7 @@ function DistributorUpdateForm() {
                         name='address'
                         id='address'
                         value={address}
-                        onChange={(e) => setQuantity(e.target.value)} />
+                        onChange={(e) => setAddress(e.target.value)} />
                 </div>
                 <div className='form-group'>
                     <ul>

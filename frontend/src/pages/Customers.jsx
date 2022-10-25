@@ -7,7 +7,7 @@ import Spinner from '../components/Spinner'
 //import the customer form components
 import CustomerForm from "../components/customerComponents/CustomerForm";
 
-import CustomerItem from "../components/customerComponents/CustomerItem";
+import CustomerItem from "../components/customerComponents/CostomerItem";
 import {getCustomers,reset} from "../features/customers/customerSlice";
 
 function Customers() {

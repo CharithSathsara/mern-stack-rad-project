@@ -44,7 +44,7 @@ function IncomeForm(){
         <section className='form'>
             <form onSubmit={onSubmit}>
                 <div className='form-group'>
-                    <label htmlFor="description">Product Name</label>
+                    <label htmlFor="description">Income Description</label>
                     <input
                         type="text"
                         name='description'
@@ -53,7 +53,7 @@ function IncomeForm(){
                         onChange={onChange}/>
                 </div>
                 <div className='form-group'>
-                    <label htmlFor="amount">Product Price</label>
+                    <label htmlFor="amount">Amount</label>
                     <input
                         type="text"
                         name='amount'

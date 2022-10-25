@@ -34,7 +34,7 @@ const setCustomer = asyncHandler (async (req, res) => {
 
     const customer = await Customer.create({
         name:req.body.name,
-        addresss:req.body.address,
+        address:req.body.address,
         mobileNumber:req.body.mobileNumber,
         //relationship
         user: req.user.id,

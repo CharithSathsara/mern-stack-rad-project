@@ -11,6 +11,7 @@ const getProducts = asyncHandler( async (req, res) => {
     //remember we have user field on the goal which is a relationship to the user model
     console.log("getting products from back end");
     const products = await Product.find({user: req.user.id});
+    console.log(" Get Products " + products)
     res.status(200).json(products);
 });
 
@@ -19,7 +20,9 @@ const getProducts = asyncHandler( async (req, res) => {
 //@access private
 const setProduct = asyncHandler (async (req, res) => {
 
+    console.log("Creating Product");
     if(!req.body.name){
+        console.log("Please add a product name field");
         //400 bad request
         //res.status(400).json({msg : 'please add a text field'}) => but better we can use the express error handler...because it have built in error handler.
         res.status(400);
@@ -27,11 +30,13 @@ const setProduct = asyncHandler (async (req, res) => {
     }
 
     if(!req.body.price){
+        console.log("Please add a product name field");
         res.status(400);
         throw new Error('Please add a product price field');
     }
 
     if(!req.body.quantity){
+        console.log("Please add a product name field");
         res.status(400);
         throw new Error('Please add a product quantity field');
     }
@@ -43,6 +48,8 @@ const setProduct = asyncHandler (async (req, res) => {
         //relationship
         user: req.user.id,
     })
+
+    console.log("PRODUCT " + product)
 
     res.status(200).json(product);
 });
@@ -91,7 +98,7 @@ const deleteProduct = asyncHandler( async (req, res) => {
 
     if(!product){
         res.status(400);
-        throw new Error('Goal not found');
+        throw new Error('Product not found');
     }
 
     //check for user

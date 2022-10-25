@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 //we have to create a thunk function for creating a goal
-import { createDistributor } from '../../features/distrbutors/distributorSlice'
+import { createDistributor } from '../../features/distributers/distributerSlice'
 
 function DistributorForm() {
 
@@ -55,7 +55,7 @@ function DistributorForm() {
                         onChange={onChange} />
                 </div>
                 <div className='form-group'>
-                    <label htmlFor="product">Distributor Price</label>
+                    <label htmlFor="product">Distributor Product</label>
                     <input
                         type="text"
                         name='product'
@@ -64,7 +64,7 @@ function DistributorForm() {
                         onChange={onChange} />
                 </div>
                 <div className='form-group'>
-                    <label htmlFor="address">Distributor Quantity</label>
+                    <label htmlFor="address">Distributor Address</label>
                     <input
                         type="text"
                         name='address'

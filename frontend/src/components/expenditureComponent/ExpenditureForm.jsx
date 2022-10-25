@@ -53,7 +53,7 @@ function ExpenditureForm() {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="amount">Expenditure Price</label>
+          <label htmlFor="amount">Expenditure Amount</label>
           <input
             type="text"
             name="amount"

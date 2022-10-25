@@ -62,7 +62,7 @@ function IncomeUpdateForm(){
                         name='description'
                         id='description'
                         value={description}
-                        onChange={(e) => setName(e.target.value)}
+                        onChange={(e) => setDescription(e.target.value)}
                     />
                 </div>
                 <div className='form-group'>
@@ -72,7 +72,7 @@ function IncomeUpdateForm(){
                         name='amount'
                         id='amount'
                         value={amount}
-                        onChange={(e) => setPrice(e.target.value)}/>
+                        onChange={(e) => setAmount(e.target.value)}/>
                 </div>
                 <div className='form-group'>
                     <ul>

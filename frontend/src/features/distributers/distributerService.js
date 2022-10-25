@@ -16,7 +16,7 @@ const createDistributor = async (distributorData, token) => {
 }
 
 // Get products
-const getDistributor = async (token) => {
+const getDistributors = async (token) => {
     const config = {
         headers: {
             Authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ const updateDistributor = async (distributorId, distributorData, token) => {
 
 const goalService = {
     createDistributor,
-    getDistributor,
+    getDistributors,
     updateDistributor,
     deleteDistributor,
 }

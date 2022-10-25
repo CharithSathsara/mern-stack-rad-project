@@ -17,7 +17,7 @@ function ExpenditureItem({ expenditure }) {
     <div className="item">
       <div>{new Date(expenditure.createdAt).toLocaleString("en-US")}</div>
       <h3>Description: {expenditure.description}</h3>
-      <h3>Amount : {expenditure.amount}</h3>
+      <h3>Amount : Rs. {expenditure.amount}</h3>
       <br />
       <button
         onClick={() => dispatch(deleteExpenditure(expenditure._id))}
@@ -27,7 +27,7 @@ function ExpenditureItem({ expenditure }) {
       </button>
       <Link to={`/update-expenditure/${expenditure._id}`}>
         <button onClick={() => setData(expenditure)} className="update-btn">
-          UPDATE
+            UPDATE
         </button>
       </Link>
     </div>

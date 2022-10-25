@@ -17,10 +17,9 @@ const getIncomes = asyncHandler( async (req, res) => {
 //@access private
 const setIncome = asyncHandler (async (req, res) => {
 
-    if(!req.body.discription){
-        
+    if(!req.body.description){
         res.status(400);
-        throw new Error('Please add a income discription field');
+        throw new Error('Please add a income description field');
     }
 
     if(!req.body.amount){
@@ -29,7 +28,7 @@ const setIncome = asyncHandler (async (req, res) => {
     }
 
     const income = await Income.create({
-        discription:req.body.discription,
+        description:req.body.description,
         amount:req.body.amount,
         //relationship
         user: req.user.id,

@@ -5,10 +5,10 @@ import { useSelector, useDispatch } from "react-redux";
 import Spinner from '../components/Spinner'
 
 //import the distributor form components
-import DistributorForm from "../components/distributorComponents/DistributorForm";
+import DistributorForm from "../components/distributorComponent/DistributorForm";
 
-import DistributorItem from "../components/distributorComponents/DistributorItem";
-import { getDistributors, reset } from "../features/distributors/distributorSlice";
+import DistributorItem from "../components/distributorComponent/DistributorItem";
+import { getDistributors, reset } from "../features/distributers/distributerSlice";
 
 function Distributors() {
 

@@ -19,7 +19,7 @@ function CustomerItem({customer}){
         <div className='item'>
             <div>{new Date(customer.createdAt).toLocaleString('en-US')}</div>
             <h3>Name: {customer.name}</h3>
-            <h3>Customer Address : Rs. {customer.address}</h3>
+            <h3>Customer Address : {customer.address}</h3>
             <h3>Customer MobileNumber: {customer.mobileNumber}</h3>
             <br/>
             <button onClick={() => dispatch(deleteCustomer(customer._id))} className='del-btn'>

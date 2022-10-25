@@ -21,10 +21,10 @@ app.use('/api/users',require('./routes/userRoutes'));
 
 // Products
 app.use('/api/products',require('./routes/productRoutes'));
-// Customers
+// customers
 app.use('/api/customers',require('./routes/customerRoutes'));
 // Income
-app.use('/api/income',require('./routes/incomeRoutes'));
+app.use('/api/incomes',require('./routes/incomeRoutes'));
 // Distributors
 app.use('/api/distributors',require('./routes/distributorRoutes'));
 // Expenditures

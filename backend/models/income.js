@@ -8,7 +8,7 @@ const incomeSchema = mongoose.Schema(
             //which object that this object id refers to
             ref: 'User',
         },
-        discription:{
+        description:{
             type:String,
             required: [true, 'Please add a discription']
         },

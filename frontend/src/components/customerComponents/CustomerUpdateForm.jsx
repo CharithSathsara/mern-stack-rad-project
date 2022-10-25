@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 //we have to create a thunk function for creating a goal
-import {getCustomer,reset,updateCustomer} from '../../features/customer/customerSlice'
+import {getCustomers,reset,updateCustomer} from '../../features/customers/customerSlice'
 import {Link, useNavigate} from "react-router-dom";
 
 
@@ -29,7 +29,7 @@ function CustomerUpdateForm(){
 
         //dispatch our goals
         // get the goals from the back end put in the line 19 goals, so we can access it
-        dispatch(getCustomer())
+        dispatch(getCustomers())
 
         return () => {
             dispatch(reset())
@@ -90,7 +90,7 @@ function CustomerUpdateForm(){
                     <ul>
                         <li>
                             <button className = 'update-btn' type='submit'>UPDATE CUSTOMER</button>
-                            <Link to='/cutomers'><button type='reset' className='update-btn'>BACK TO CUSTOMERS</button></Link>
+                            <Link to='/customers'><button type='reset' className='update-btn'>BACK TO CUSTOMERS</button></Link>
                         </li>
                     </ul>
                 </div>

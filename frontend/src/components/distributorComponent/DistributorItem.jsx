@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux'
-import { deleteDistributor } from '../../features/distributors/distributorSlice'
+import { deleteDistributor } from '../../features/distributers/distributerSlice'
 import { Link } from "react-router-dom";
 import React from "react";
 

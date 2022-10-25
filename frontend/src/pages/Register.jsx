@@ -38,7 +38,7 @@ function Register() {
         }
 
         if(isSuccess || user){
-            navigate('/')
+            navigate('/home')
         }
 
         dispatch(reset())
@@ -91,7 +91,7 @@ function Register() {
                                id='name'
                                name='name'
                                value={name}
-                               placeholder='Enter Your Name'
+                               placeholder='Enter Your Branch Name'
                                onChange={onChange}
                         />
                     </div>

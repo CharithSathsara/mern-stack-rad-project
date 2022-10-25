@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import distributorService from './distributorService'
+import distributorService from './distributerService'
 
 const initialState = {
     distributors: [],
@@ -75,7 +75,7 @@ export const updateDistributor = createAsyncThunk(
         try {
             const token = thunkAPI.getState().auth.user.token
             const distributor_id = localStorage.getItem('ID')
-            return await productService.updateProduct(distributor_id, distributorData, token)
+            return await distributorService.updateDistributor(distributor_id, distributorData, token)
         } catch (error) {
             const message =
                 (error.response &&

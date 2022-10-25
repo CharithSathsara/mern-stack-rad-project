@@ -28,7 +28,7 @@ function Login() {
     useEffect( ()=>{
 
         if(isError){
-            toast.error(message)
+            toast.error("Invalid Login")
         }
 
         if(isSuccess || user){
@@ -84,7 +84,7 @@ function Login() {
                             id='email'
                             name='email'
                             value={email}
-                            placeholder='Please Enter your email'
+                            placeholder='Please Enter your Branch email'
                             onChange={onChange}
                         />
                     </div>

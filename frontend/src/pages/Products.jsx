@@ -40,13 +40,13 @@ function Products() {
         return <Spinner />
     }
 
-    //now we want to show our goals using 19 line goals//from state
+    //now we want to show our products using 19 line goals//from state
     //add expression
 
     return (
         <>
             <section className='heading'>
-                <p>Products Dashboard</p>
+                <p>{user && user.name} Products Dashboard</p>
             </section>
 
             <ProductForm/>

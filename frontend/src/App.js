@@ -25,11 +25,12 @@ function App() {
           <Router>
               <div className='container'>
                   <Header/>
-                  <h1>Welcome to SuperMarket Management System</h1>
+                  <h1>SCS 2208 RAD MERN Project</h1>
                   <Routes>
                       <Route path='/login' element={<Login />} />
                       <Route path='/register' element={<Register />} />
                       <Route path='/home' element={<Home />} />
+                      <Route path='/' element={<Home />} />
 
                       <Route path='/products' element={<Products />} />
                       <Route path='/update-product/:id' element={<ProductUpdateForm />} />
