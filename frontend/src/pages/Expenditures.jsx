@@ -41,7 +41,7 @@ function Expenditures() {
   return (
     <>
       <section className="heading">
-        <p>Expenditures Dashboard</p>
+        <p>{user && user.name} Expenditures Dashboard</p>
       </section>
 
       <ExpenditureForm />

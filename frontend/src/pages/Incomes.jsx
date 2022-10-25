@@ -46,7 +46,7 @@ function Incomes() {
     return (
         <>
             <section className='heading'>
-                <p>Incomes Dashboard</p>
+                <p>{user && user.name} Incomes Dashboard</p>
             </section>
 
             <IncomeForm/>

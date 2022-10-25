@@ -46,7 +46,7 @@ function Customers() {
     return (
         <>
             <section className='heading'>
-                <p>Customers Dashboard</p>
+                <p>{user && user.name} Customers Dashboard</p>
             </section>
 
             <CustomerForm/>

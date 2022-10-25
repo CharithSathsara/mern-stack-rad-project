@@ -46,7 +46,7 @@ function Distributors() {
     return (
         <>
             <section className='heading'>
-                <p>Distributors Dashboard</p>
+                <p>{user && user.name} Distributors Dashboard</p>
             </section>
 
             <DistributorForm />
