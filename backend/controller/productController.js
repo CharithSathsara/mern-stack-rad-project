@@ -68,6 +68,7 @@ const updateProduct = asyncHandler( async (req, res) => {
         throw new Error('User not found')
     }
 
+
     //make sure the logged-in user matches the goal user
     if(product.user.toString() !== req.user.id){
         res.status(401);
@@ -92,8 +93,6 @@ const deleteProduct = asyncHandler( async (req, res) => {
         res.status(400);
         throw new Error('Goal not found');
     }
-
-    //const user = await User.findById(req.user.id);
 
     //check for user
     if(!req.user){
