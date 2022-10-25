@@ -22,6 +22,9 @@ app.use('/api/users',require('./routes/userRoutes'));
 // Products
 app.use('/api/products',require('./routes/productRoutes'));
 
+//distributors
+app.use('/api/distributors',require('./routes/distributorRoutes'));
+
 //override the default error handler
 app.use(errorHandler);
 
