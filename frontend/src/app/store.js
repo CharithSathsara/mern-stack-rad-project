@@ -1,11 +1,19 @@
 import { configureStore } from '@reduxjs/toolkit';
 import authReducer from "../features/authentication/authSlice";
 import productReducer from "../features/products/productSlice";
+import customerReducer from "../features/Customers/customerSlice";
+import distributorReducer from "../features/distributers/distributerSlice";
+import incomeReducer from "../features/incomes/incomeSlice";
+import expenditureReducer from "../features/expenditures/expenditureSlice";
 
 export const store = configureStore({
-  //later we create user reducer and goal reducer
+
   reducer: {
     auth:authReducer,
-    products:productReducer
+    products:productReducer,
+    customers:customerReducer,
+    distributors:distributorReducer,
+    incomes:incomeReducer,
+    expenditures:expenditureReducer,
   },
 });
