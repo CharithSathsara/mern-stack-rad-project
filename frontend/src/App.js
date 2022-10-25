@@ -25,6 +25,7 @@ function App() {
           <Router>
               <div className='container'>
                   <Header/>
+                  <h1>Welcome to SuperMarket Management System</h1>
                   <Routes>
                       <Route path='/login' element={<Login />} />
                       <Route path='/register' element={<Register />} />

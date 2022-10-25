@@ -25,17 +25,17 @@ function Home() {
             <Link to='/products'>
                 <button className='card-btn'>Go To Products</button>
             </Link>
-            <Link to='/'>
-                <button className='card-btn'>Go To Products</button>
+            <Link to='/customers'>
+                <button className='card-btn'>Go To Customers</button>
             </Link>
-            <Link to='/'>
-                <button className='card-btn'>Go To Products</button>
+            <Link to='/distributors'>
+                <button className='card-btn'>Go To Distributors</button>
             </Link>
-            <Link to='/'>
-                <button className='card-btn'>Go To Products</button>
+            <Link to='/incomes'>
+                <button className='card-btn'>Go To Incomes</button>
             </Link>
-            <Link to='/'>
-                <button className='card-btn'>Go To Products</button>
+            <Link to='/expenditures'>
+                <button className='card-btn'>Go To Expenditures</button>
             </Link>
         </>
     )
